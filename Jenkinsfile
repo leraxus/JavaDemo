@@ -35,8 +35,7 @@ node{
 		bat label: '', script: 'sourceanalyzer -b jenkinsdemo -cp "lib/*.jar" "src/**/*.java"'
 		//sourceanalyzer -b ava1.5 -cp "lib/*.jar" "src/**/*.java"
 		//bat "sourceanalyzer -b java1.5 -source 1.5 ${source}"
-		// fortifyTranslate addJVMOptions: '', buildID: 'java1.5', excludeList: '', logFile: '', maxHeap: '', projectScanType: fortifyJava(javaAddOptions: '', javaClasspath: '', javaSrcFiles: 'C:\\Program Files (x86)\\Jenkins\\workspace\\Demo\\src', javaVersion:
-		 '1.8')
+		// fortifyTranslate addJVMOptions: '', buildID: 'java1.5', excludeList: '', logFile: '', maxHeap: '', projectScanType: fortifyJava(javaAddOptions: '', javaClasspath: '', javaSrcFiles: 'C:\\Program Files (x86)\\Jenkins\\workspace\\Demo\\src', javaVersion:'1.8')
 	}
 
 	stage ('Fortify CloudScan Scan and upload'){
