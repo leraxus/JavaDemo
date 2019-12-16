@@ -39,8 +39,7 @@ node{
 	}
 
 	stage ('Fortify CloudScan Scan and upload'){
-		//bat label: '', script: 'cloudscan.bat -sscurl https://sde-fssc-01.codesparks.ncs.com.sg:8443/ssc -ssctoken b8b2b68c-0a61-4ed8-9298-a78187241d75 start -upload --application jenkinsdemo --application-version -b jenkinsdemo -uptoken b8b2b68c-0a61-4ed8-9298-a78187241d75
-		 -scan -Xmx2G'
+		//bat label: '', script: 'cloudscan.bat -sscurl https://sde-fssc-01.codesparks.ncs.com.sg:8443/ssc -ssctoken b8b2b68c-0a61-4ed8-9298-a78187241d75 start -upload --application jenkinsdemo --application-version -b jenkinsdemo -uptoken b8b2b68c-0a61-4ed8-9298-a78187241d75 -scan -Xmx2G'
 		bat "cloudscan.bat -sscurl ${clouscan_ssc} -ssctoken ${ssctoken} start -upload -versionid 53 -b jenkinsdemo -uptoken ${ssctoken} -scan -Xmx2G"
 	}
 
